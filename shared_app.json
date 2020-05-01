@@ -1,0 +1,23 @@
+{
+	"executionSystem": "cli-tacc-s2-shared",
+	"deploymentPath": "/shared_test/",
+	"name": "shared-test",
+	"label": "shared-test",
+	"startupScript": "",
+	"templatePath": "app.sh",
+	"testPath": "app.sh",
+	"checkpointable": false,
+	"deploymentSystem": "data-tacc-work-gzynda",
+	"storageSystem": "data-tacc-work-gzynda",
+	"helpURI": "https://tacc-cloud.readthedocs.io/projects/agave/en/latest/agave/guides/apps/app-wrapper-templates.html",
+	"ontology": [],
+	"shortDescription": "Application on shared node",
+	"tags": [],
+	"parallelism": "SERIAL",
+	"version": "0.0.1",
+	"executionType": "CLI",
+	
+  "inputs":[],
+  "parameters":[],
+  "outputs":[]
+}

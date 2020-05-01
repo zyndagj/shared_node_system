@@ -1,0 +1,73 @@
+{
+	"status": "UP", 
+	"maxSystemJobs": 64, 
+	"site": "tacc.utexas.edu", 
+	"owner": "sd2eadm", 
+	"maxSystemJobsPerUser": 8, 
+	"id": "cli-tacc-wrangler", 
+	"globalDefault": false, 
+	"workDir": "", 
+	"uuid": "8056205527513296409-242ac11a-0001-006", 
+	"storage": {
+		"protocol": "SFTP", 
+		"homeDir": "/", 
+		"rootDir": "/work/projects/SD2E-Community/prod/var/run", 
+		"auth": {
+			"type": "SSHKEYS"
+		}, 
+		"host": "wrangler.tacc.utexas.edu", 
+		"proxy": null, 
+		"mirror": false, 
+		"port": 22
+	}, 
+	"environment": null, 
+	"_links": {
+		"self": {
+			"href": "https://api.sd2e.org/systems/v2/cli-tacc-wrangler"
+		}, 
+		"history": {
+			"href": "https://api.sd2e.org/systems/v2/cli-tacc-wrangler/history"
+		}, 
+		"roles": {
+			"href": "https://api.sd2e.org/systems/v2/cli-tacc-wrangler/roles"
+		}, 
+		"metadata": {
+			"href": "https://api.sd2e.org/meta/v2/data/?q=%7B%22associationIds%22%3A%228056205527513296409-242ac11a-0001-006%22%7D"
+		}
+	}, 
+	"type": "EXECUTION", 
+	"public": true, 
+	"revision": 4, 
+	"available": true, 
+	"description": "CLI interface on the Wrangler systemi.", 
+	"scratchDir": "", 
+	"scheduler": "FORK", 
+	"name": "TACC Wrangler (Interactive)", 
+	"default": false, 
+	"lastModified": "6 months ago", 
+	"queues": [
+		{
+			"maxUserJobs": 8, 
+			"maxRequestedTime": "07:59:00", 
+			"mappedName": null, 
+			"description": null, 
+			"default": true, 
+			"maxMemoryPerNode": 2, 
+			"maxNodes": 1, 
+			"maxJobs": 64, 
+			"customDirectives": "-A SD2E-Community", 
+			"maxProcessorsPerNode": 1, 
+			"name": "normal"
+		}
+	], 
+	"executionType": "CLI", 
+	"login": {
+		"host": "wrangler.tacc.utexas.edu", 
+		"protocol": "SSH", 
+		"proxy": null, 
+		"auth": {
+			"type": "SSHKEYS"
+		}, 
+		"port": 22
+	}
+}

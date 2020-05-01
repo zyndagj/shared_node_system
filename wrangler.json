@@ -1,0 +1,102 @@
+{
+	"status": "UP", 
+	"maxSystemJobs": 10, 
+	"site": "tacc.utexas.edu", 
+	"owner": "sd2eadm", 
+	"maxSystemJobsPerUser": 5, 
+	"id": "hpc-tacc-wrangler-gzynda", 
+	"globalDefault": false, 
+	"workDir": "", 
+	"uuid": "894276094400523799-242ac116-0001-006", 
+	"storage": {
+		"protocol": "SFTP", 
+		"homeDir": "/jobs", 
+		"rootDir": "/work/03076/gzynda", 
+		"auth": {
+			"type": "SSHKEYS"
+		}, 
+		"host": "cloud.corral.tacc.utexas.edu", 
+		"proxy": null, 
+		"mirror": false, 
+		"port": 2222
+	}, 
+	"environment": null, 
+	"_links": {
+		"owner": {
+			"href": "https://api.sd2e.org/profiles/v2/sd2eadm"
+		}, 
+		"self": {
+			"href": "https://api.sd2e.org/systems/v2/hpc-tacc-wrangler-gzynda"
+		}, 
+		"history": {
+			"href": "https://api.sd2e.org/systems/v2/hpc-tacc-wrangler-gzynda/history"
+		}, 
+		"roles": {
+			"href": "https://api.sd2e.org/systems/v2/hpc-tacc-wrangler-gzynda/roles"
+		}, 
+		"metadata": {
+			"href": "https://api.sd2e.org/meta/v2/data/?q=%7B%22associationIds%22%3A%22894276094400523799-242ac116-0001-006%22%7D"
+		}
+	}, 
+	"type": "EXECUTION", 
+	"public": false, 
+	"revision": 3, 
+	"available": true, 
+	"description": "Wrangler is the most powerful data analysis system allocated in XSEDE. The system is designed for large scale data transfer, analytics, and sharing and provides flexible support for a wide range of software stacks and workflows.", 
+	"scratchDir": "", 
+	"scheduler": "SLURM", 
+	"name": "TACC Wrangler HPC (gzynda)", 
+	"default": false, 
+	"lastModified": "6 months ago", 
+	"queues": [
+		{
+			"maxUserJobs": 5, 
+			"maxRequestedTime": "04:00:00", 
+			"mappedName": null, 
+			"description": null, 
+			"default": false, 
+			"maxMemoryPerNode": 128, 
+			"maxNodes": 4, 
+			"maxJobs": 5, 
+			"customDirectives": "-A SD2E-Community", 
+			"maxProcessorsPerNode": 48, 
+			"name": "debug"
+		}, 
+		{
+			"maxUserJobs": 5, 
+			"maxRequestedTime": "48:00:00", 
+			"mappedName": null, 
+			"description": null, 
+			"default": true, 
+			"maxMemoryPerNode": 128, 
+			"maxNodes": 4, 
+			"maxJobs": 5, 
+			"customDirectives": "-A SD2E-Community", 
+			"maxProcessorsPerNode": 48, 
+			"name": "all"
+		}, 
+		{
+			"maxUserJobs": 5, 
+			"maxRequestedTime": "48:00:00", 
+			"mappedName": null, 
+			"description": null, 
+			"default": false, 
+			"maxMemoryPerNode": 128, 
+			"maxNodes": 4, 
+			"maxJobs": 5, 
+			"customDirectives": "-A SD2E-Community", 
+			"maxProcessorsPerNode": 48, 
+			"name": "normal"
+		}
+	], 
+	"executionType": "HPC", 
+	"login": {
+		"host": "wrangler.tacc.utexas.edu", 
+		"protocol": "SSH", 
+		"proxy": null, 
+		"auth": {
+			"type": "SSHKEYS"
+		}, 
+		"port": 22
+	}
+}
